@@ -1,0 +1,16 @@
+<!doctype html>
+<title>Hello from Flask</title>
+<script src='/static/1.js'></script>
+{% if name %}
+	<h3>Hello {{ name }}!</h3>
+{% else %}
+	<h3>Hello World!</h3>
+{% endif %}
+
+<p >
+	<form action='/upload/' method='POST' enctype="multipart/form-data">
+		<span>请选择上传文件：</span> <br/>
+		<input type='file' name='file' /> <br />
+		<button typp='submit'>提交</submit>
+	</form>
+</p>
